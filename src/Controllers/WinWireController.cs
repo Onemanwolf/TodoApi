@@ -1,8 +1,8 @@
 using System.Runtime.Serialization;
 using System.Data;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Schema;
-using Newtonsoft.Json.Schema.Generation;
+
+
 using src.Models;
 
 namespace src.Controllers
@@ -13,9 +13,7 @@ namespace src.Controllers
     public class WinWireController : ControllerBase
     {
 
-        public static JSchemaGenerator generator = new JSchemaGenerator();
 
-        JSchema schema = generator.Generate(typeof(WinWire));
 
         private IRepodb<WinWire, Contact> _repo;
 
