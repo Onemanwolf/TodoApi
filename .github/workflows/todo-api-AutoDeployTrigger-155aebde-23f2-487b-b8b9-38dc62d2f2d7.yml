@@ -37,7 +37,7 @@ jobs:
           push: true
           tags: mvpcontainerregister.azurecr.io/todo-api:${{ github.sha }}
           file: ./src/Dockerfile
-          context: ./src/
+          context: ./
 
 
   deploy:
