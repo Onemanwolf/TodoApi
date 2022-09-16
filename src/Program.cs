@@ -31,7 +31,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors(policy =>
-    policy.WithOrigins("https://localhost:7270","http://localhost:5118","https://win-wire-app--8nfao0p.redgrass-633dc5ff.eastus.azurecontainerapps.io")
+    policy.WithOrigins("https://localhost:7270","http://localhost:5118","https://win-wire-app.redgrass-633dc5ff.eastus.azurecontainerapps.io")
     .AllowAnyMethod()
     .WithHeaders(HeaderNames.ContentType));
 
